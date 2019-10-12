@@ -15,8 +15,8 @@ public class Loginpage extends Base
 	Properties pro=new Properties();
 	@Test
 	public  void testcase1() throws Exception {
-		//launchbrowser();
-		 FileInputStream f=new FileInputStream("C:\\New folder\\PHPAutomation\\Base.properties");
+		launchbrowser();
+		 FileInputStream f=new FileInputStream("C:\\Users\\Online Test\\git\\PHPTravels\\PHPAutomation\\Base.properties");
 		pro.load(f);
 
 		driver.get(pro.getProperty("URL"));

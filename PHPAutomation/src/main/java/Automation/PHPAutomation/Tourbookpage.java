@@ -12,7 +12,7 @@ public class Tourbookpage extends Base
 	public void book() throws IOException, Exception {
 		
 		launchbrowser();
-		 FileInputStream f=new FileInputStream("C:\\New folder\\PHPAutomation\\Base.properties");
+		 FileInputStream f=new FileInputStream("C:\\Users\\Online Test\\git\\PHPTravels\\PHPAutomation\\Base.properties");
 		pro.load(f);
 	   
 driver.get(pro.getProperty("URL"));

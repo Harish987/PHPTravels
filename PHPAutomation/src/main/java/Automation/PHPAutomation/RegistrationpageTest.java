@@ -17,8 +17,8 @@ public class RegistrationpageTest  extends Base{
 	Properties pro=new Properties();
 	@Test
 	public  void testcase() throws IOException, InterruptedException {
-		//launchbrowser();
-		 FileInputStream f=new FileInputStream("C:\\New folder\\PHPAutomation\\Base.properties");
+	//launchbrowser();
+		 FileInputStream f=new FileInputStream("C:\\Users\\Online Test\\git\\PHPTravels\\PHPAutomation\\Base.properties");
 		pro.load(f);
 		
 		driver.get(pro.getProperty("URL"));
@@ -33,7 +33,7 @@ public class RegistrationpageTest  extends Base{
 	driver.findElement(Email).sendKeys(pro.getProperty("Emailid"));
 	driver.findElement(Password).sendKeys(pro.getProperty("password"));
 	driver.findElement(Confirm).sendKeys(pro.getProperty("confirmpassword"));
-	driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
+driver.findElement(By.xpath("//button[@id='cookyGotItBtn']")).click();
 	driver.findElement(Submit).click();
 Thread.sleep(2000);
 	File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
